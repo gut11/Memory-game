@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+}
+
+
+#container{
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Righteous', cursive;
+    background-color: rgb(194, 190, 190);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#tela_game_over{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#tela_game_over div{
+    text-align: center;
+}
+
+
+#tela_game_over h2{
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+
+#tela_game_over button{
+    padding: 12px;
+    border-radius: 10px;
+    background-color: rgb(245, 245, 39);
+    border: 2.5px solid rgb(135, 194, 47);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+#tela_game_over button:hover{
+    transition: 0.35s;
+    color: rgb(245, 245, 39);
+    background-color: rgb(135, 194, 47);
+    border: 2.5px solid black;
+}
+
+
+.card{
+    height: 8vw;
+    width: 8vw;
+    display: inline-block;
+    position: relative;
+    transform-style: preserve-3d;
+    border-radius: 10%;
+    transition: 0.5s;
+}
+
+
+.flip{
+    transform: rotateY(180deg);
+}
+
+
+.back{
+    background-color: #0a96e7;
+    height: 8vw;
+    width: 8vw;
+    border-radius: 10%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    box-shadow: 1.5px 1.5px 10px rgb(0, 0, 0);
+}
+
+
+.front{
+    height: 8vw;
+    width: 8vw;
+    background-size: cover;
+    background-color: #101c2c;
+    border-radius: 10%;
+    position: absolute;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    box-shadow: 1.5px 1.5px 10px rgb(0, 0, 0);
+}
+
+
+#board{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    gap: 25px;
+    justify-content: center;
+}
+
+
+
+@media(max-width: 800px){
+    .card{
+        height: 13.75vw;
+        width:  13.75vw;
+    }
+    
+
+    .back{
+        height: 13.75vw;
+        width:  13.75vw;
+    }
+    
+    
+    .front{
+        height: 13.75vw;
+        width:  13.75vw;
+    }
+    
+    
+    #board{
+        width: 70%;
+        gap: 2.5vw;
+    }
+}
