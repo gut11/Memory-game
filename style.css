@@ -67,6 +67,7 @@ body{
     transform-style: preserve-3d;
     border-radius: 10%;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 
