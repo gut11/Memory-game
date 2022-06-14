@@ -1,5 +1,15 @@
-Ola, este é um projeto de um jogo da memoria do curso de desenvolvimento web Programador BR.
+#Tic-Tac-Toe
 
-Hello, this is a memory-game project from Programador BR's web development course.
+PT-BR:
 
-link GitHub Pages: https://gut11.github.io/Memory-game/
+Página com um jogo da memoria que usa as logos de tecnologias e linguagens de desenvolvimento web como a frente das cartas.
+
+Projeto do curso de desenvolvimento web do Programador BR.
+
+EN:
+
+Webpage with a memory game that uses the logos from web development technologies and laguanges as the face of the card.
+
+Project from Frontend Mentor.
+
+Link GitHub Pages: https://gut11.github.io/Memory-game/
